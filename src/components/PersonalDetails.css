@@ -1,0 +1,337 @@
+#first {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:23% ;
+    padding: 20px;
+   background-color: #06074b;
+margin-top: 50px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, rgb(0, 217, 255), rgb(255, 20, 20)) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+    
+  }
+
+  .first1{
+    
+    height: 200vh;
+    background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(109.6deg, rgb(0, 37, 84) 11.2%, rgba(0, 37, 84, 0.32) 100.2%);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+
+  .ProgressBar{
+    margin-left: 200px;
+    margin-right: 200px;
+   color: aqua;
+  }
+
+ 
+  @keyframes huerotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+  
+.h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+}
+
+.btn{
+    display: flex;
+    margin-left: 41%;
+}
+.bt1{
+    margin: 5px;
+}
+.bt2{
+    position: absolute;
+   margin-top: 17px !important;
+}
+
+
+
+  #h2 {
+    color: #ffffff;
+  }
+
+  .h21{
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: aqua;
+  }
+  
+  #label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  #button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  #button:active {
+    transform: scale(0.9);
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, rgba(8, 189, 189, 0.718), rgb(79, 255, 20)) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+    transition: all 0.3s ease;
+  }
+
+
+
+#dashboard{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
+
+
+  table{
+    padding: 10px;
+    
+}
+tr{
+    font-size: 20px;
+   
+    
+}
+
+
+table {
+    
+    border-collapse: separate;
+    border-spacing: 5px;
+    width: 100%;
+}
+
+th, td {
+    border: 10px solid rgba(167,190,174,0.1);
+    border-radius: 50px;
+   
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: rgba(184,80,66,0.5);
+    transition: all  .4s ease-in-out;
+}
+
+th:hover{
+    cursor: pointer;
+    background-color: #B85042;
+    scale:  1.06;
+    transition: all  .4s ease-in-out;
+}
+td{
+    background-color:rgba(231,232,209,0.5);
+    transition: all  .4s ease-in-out;
+}
+td:hover{
+    cursor: pointer;
+    background-color: #E7E8D1;
+    scale:  1.06;
+    transition: all  .4s ease-in-out;
+}
+
+
+
+
+#preview{
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+
+#subdiv{
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 25%;
+    width: 50%;
+    border: 10px solid;
+    border-image: linear-gradient(45deg, rgb(0, 217, 255), rgb(255, 20, 20)) 1;
+    clip-path: inset(0px round 10px);
+    animation: huerotate 6s infinite linear;
+    filter: hue-rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+html {
+  height: 100%;
+}
+
+#form {
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+#form fieldset {
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#form .finish {
+  text-align: center;
+}
+
+#form fieldset:not(:first-of-type) {
+  display: none;
+}
+
+#form .pre-step,
+#form .next-step {
+  width: 100px;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
+}
+
+#form .form,
+#form .pre-step {
+  background: #616161;
+}
+
+#form .form,
+#form .next-step {
+  background: red;
+}
+
+#form .pre-step:hover,
+#form .pre-step:focus {
+  background-color: #000000;
+}
+
+#form .next-step:hover,
+#form .next-step:focus {
+  background-color: #2F8D46;
+}
+
+.text {
+  color: red;
+  font-weight: normal;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+}
+
+#progressbar .active {
+  color: #2F8D46;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #step1:before {
+  content: "1";
+}
+
+#progressbar #step2:before {
+  content: "2";
+}
+
+#progressbar #step3:before {
+  content: "3";
+}
+
+#progressbar #step4:before {
+  content: "4";
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #2F8D46 !important;
+  
+}
